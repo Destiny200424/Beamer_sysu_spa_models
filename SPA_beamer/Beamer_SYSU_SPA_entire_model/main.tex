@@ -1,0 +1,317 @@
+
+
+%----------------------------------------------------
+% SYSU.SPA Beamer Model by DSY May 2024;
+% My personal site:  https://destiny200424.github.io/
+% or Email me at - dongsy6@mail2.sysu.edu.cn
+%----------------------------------------------------
+
+
+\documentclass[AutoFakeBold,AutoFakeSlant]{beamer}
+\usepackage[british]{babel}
+\usepackage{graphicx,hyperref,sysu,url}
+\usepackage{pstricks-add}
+%% 中文
+\usepackage{ctex}
+\usepackage{newtxmath}
+\RequirePackage{booktabs}
+\usepackage{multicol} 
+\usepackage{multirow}
+\usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage{color}
+
+% colors
+\definecolor{sysugreen}{RGB}{0,88,38}
+\definecolor{sysugreendark}{RGB}{5,71,25}
+
+% commands
+\newcommand{\ctoday}{\number\year 年 \number\month 月 \number\day 日}
+
+%% 根据需要修改中文字体
+\setCJKmainfont[ItalicFont={SimSun}]{SimSun}
+% \setCJKsansfont{Microsoft YaHei}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{FangSong}
+
+% \setCJKmonofont{SimSun}
+% \xeCJKsetcharclass{"0}{"2E7F}{0}
+% \xeCJKsetcharclass{"2E80}{"FFFF}{1}
+
+% Require XeLaTeX
+\RequirePackage{fontspec,xltxtra,xunicode}
+% 根据需要修改英文字体
+\setmainfont[Mapping=tex-text]{Times New Roman}
+\setsansfont[Mapping=tex-text]{Arial}
+\setmonofont{Consolas}
+
+% 设置公式字体
+\usefonttheme[onlymath]{serif}
+
+
+% 演示文稿标题:
+%  1 底部显示的标题;
+%  2 标题页正中显示的大标题;
+\title[这里修改为你的课题（建议与标题一致）]{
+  这是大标题} %%%%%%%%%%
+
+% 可选：标题页显示的副标题
+\subtitle{副标题} %%%%%%%%%%%
+
+% 作者信息:
+%  1 底部显示的作者信息;
+%  2 联系信息;
+% \author[Author Name]{
+%   答辩人 \\\medskip
+%   {\small \url{netid@mail2.sysu.edu.cn}} \\
+%   {\small \url{www.sysu.edu.cn}}
+% }
+
+% 学校学院信息:
+%  1 顶部学校信息
+%  2 标题页显示的学院学校信息
+\institute[Sun Yat-Sen University]{
+  中山大学 \\ 物理与天文学院
+  }
+%%%%%%%%%%%%%%%
+%% 时间信息
+%  1 底部显示的标准时间信息
+%  2 标题页显示的中文时间信息
+\date[\today]{\ctoday}
+
+\begin{document}
+
+% 作者信息%%%%%%%%%%%%%%%
+\author[netid@mail2.sysu.edu.cn]{
+  主讲人  \ XXXX
+  \texorpdfstring{\\\medskip {\small 导师 \quad XXX 教授 }}{XXX}
+}
+
+\begin{frame}
+  % 标题页
+  \titlepage
+\end{frame}
+% 标题页不编号
+\setcounter{framenumber}{0}
+
+\begin{frame}
+  % 目录页
+  \frametitle{目\quad 录}
+  % 双栏
+  % \begin{multicols}{2}
+  %   \tableofcontents
+  % \end{multicols}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{引言}
+
+\begin{frame}
+  \frametitle{介绍}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{内容}
+
+  引言内容包括：
+  \begin{enumerate}
+    \item \textbf{本研究课题的学术背景及理论与实际意义}；
+    \item \textbf{本研究课题的来源及主要研究内容}；
+    \item \textbf{建立研究的线索与思路}。
+  \end{enumerate}
+
+\end{frame}
+
+\section{背景}
+
+\subsection{XXX}
+
+\begin{frame}
+  \frametitle{XXXX}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Why Beamer}
+	\begin{itemize}
+		\item \LaTeX 广泛用于学术界，期刊会议论文模板
+	\end{itemize}
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c}
+			Microsoft\textsuperscript{\textregistered}  Word & \LaTeX \\
+			\hline
+			文字处理工具 & 专业排版软件 \\
+			容易上手，简单直观 & 容易上手 \\
+			所见即所得 & 所见即所想，所想即所得 \\
+			高级功能不易掌握 & 进阶难，但一般用不到 \\
+			处理长文档需要丰富经验 & 和短文档处理基本无异 \\
+			花费大量时间调格式 & 无需担心格式，专心作者内容 \\
+			公式排版差强人意 & 尤其擅长公式排版 \\
+			二进制格式，兼容性差 & 文本文件，易读、稳定 \\
+			付费商业许可 & 自由免费使用 \\
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+
+\section{正文}
+
+\subsection{步骤一}
+
+\begin{frame}
+  \frametitle{Say my name}
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=0.7\linewidth]{figures/say_my_name}
+ 	\label{fig:saymyname}
+ \end{figure}
+ 
+\end{frame}
+
+\subsection{步骤二}
+
+\begin{frame}
+  \frametitle{添加图片}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figures/gzh}
+	\caption{欢迎关注哈哈}
+	\label{fig:gzh}
+\end{figure}
+\end{frame}
+
+\section{举例}
+
+\subsection{XXXX}
+
+\begin{frame}
+  \frametitle{排版举例}
+  \begin{exampleblock}{无编号公式} % 加 * 
+  	\begin{equation*}
+  		J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
+  	\end{equation*}
+  \end{exampleblock}
+  \begin{exampleblock}{多行多列公式\footnote{\color{white}如果公式中有文字出现，请用 $\backslash$mathrm\{\} 或者 $\backslash$text\{\} 包含，不然就会变成 $clip$，在公式里看起来比 $\mathrm{clip}$ 丑非常多。}}
+  	% 使用 & 分隔
+  	\begin{align}
+  		Q_\mathrm{target}&=r+\gamma Q^\pi(s^\prime, \pi_\theta(s^\prime)+\epsilon)\\
+  		\epsilon&\sim\mathrm{clip}(\mathcal{N}(0, \sigma), -c, c)\nonumber
+  	\end{align}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+	\frametitle{图形与分栏}
+	% From thuthesis user guide.
+	\begin{minipage}[c]{0.3\linewidth}
+		\psset{unit=0.8cm}
+		\begin{pspicture}(-1.75,-3)(3.25,4)
+			\psline[linewidth=0.25pt](0,0)(0,4)
+			\rput[tl]{0}(0.2,2){$\vec e_z$}
+			\rput[tr]{0}(-0.9,1.4){$\vec e$}
+			\rput[tl]{0}(2.8,-1.1){$\vec C_{ptm{ext}}$}
+			\rput[br]{0}(-0.3,2.1){$\theta$}
+			\rput{25}(0,0){%
+				\psframe[fillstyle=solid,fillcolor=lightgray,linewidth=.8pt](-0.1,-3.2)(0.1,0)}
+			\rput{25}(0,0){%
+				\psellipse[fillstyle=solid,fillcolor=yellow,linewidth=3pt](0,0)(1.5,0.5)}
+			\rput{25}(0,0){%
+				\psframe[fillstyle=solid,fillcolor=lightgray,linewidth=.8pt](-0.1,0)(0.1,3.2)}
+			\rput{25}(0,0){\psline[linecolor=red,linewidth=1.5pt]{->}(0,0)(0.,2)}
+			%           \psRotation{0}(0,3.5){$\dot\phi$}
+			%           \psRotation{25}(-1.2,2.6){$\dot\psi$}
+			\psline[linecolor=red,linewidth=1.25pt]{->}(0,0)(0,2)
+			\psline[linecolor=red,linewidth=1.25pt]{->}(0,0)(3,-1)
+			\psline[linecolor=red,linewidth=1.25pt]{->}(0,0)(2.85,-0.95)
+			\psarc{->}{2.1}{90}{112.5}
+			\rput[bl](.1,.01){C}
+		\end{pspicture}
+	\end{minipage}\hspace{1cm}
+	\begin{minipage}{0.3\linewidth}
+		\medskip
+		%\hspace{2cm}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[height=.3\textheight]{logo.png}
+		\end{figure}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}
+	    \begin{exampleblock}{编号多行公式}
+		% Taken from Mathmode.tex
+		\begin{multline}
+			A=\lim_{n\rightarrow\infty}\Delta x\left(a^{2}+\left(a^{2}+2a\Delta x+\left(\Delta x\right)^{2}\right)\right.\label{eq:reset}\\
+			+\left(a^{2}+2\cdot2a\Delta x+2^{2}\left(\Delta x\right)^{2}\right)\\
+			+\left(a^{2}+2\cdot3a\Delta x+3^{2}\left(\Delta x\right)^{2}\right)\\
+			+\ldots\\
+			\left.+\left(a^{2}+2\cdot(n-1)a\Delta x+(n-1)^{2}\left(\Delta x\right)^{2}\right)\right)\\
+			=\frac{1}{3}\left(b^{3}-a^{3}\right)
+		\end{multline}
+	\end{exampleblock}
+\end{frame}
+
+
+
+
+\section{XXX}
+
+\subsection{工作总结}
+\begin{frame}
+  \frametitle{\LaTeX{} 常用命令}
+  \begin{exampleblock}{命令}
+  	\centering
+  	\footnotesize
+  	\begin{tabular}{llll}
+  		\cmd{chapter} & \cmd{section} & \cmd{subsection} & \cmd{paragraph} \\
+  		章 & 节 & 小节 & 带题头段落 \\\hline
+  		\cmd{centering} & \cmd{emph} & \cmd{verb} & \cmd{url} \\
+  		居中对齐 & 强调 & 原样输出 & 超链接 \\\hline
+  		\cmd{footnote} & \cmd{item} & \cmd{caption} & \cmd{includegraphics} \\
+  		脚注 & 列表条目 & 标题 & 插入图片 \\\hline
+  		\cmd{label} & \cmd{cite} & \cmd{ref} \\
+  		标号 & 引用参考文献 & 引用图表公式等\\\hline
+  	\end{tabular}
+  \end{exampleblock}
+  \begin{exampleblock}{环境}
+	\centering
+	\footnotesize
+	\begin{tabular}{lll}
+		\env{table} & \env{figure} & \env{equation}\\
+		表格 & 图片 & 公式 \\\hline
+		\env{itemize} & \env{enumerate} & \env{description}\\
+		无编号列表 & 编号列表 & 描述 \\\hline
+	\end{tabular}
+\end{exampleblock}
+\end{frame}
+
+\subsection{研究展望}
+\begin{frame}
+  \frametitle{研究展望}
+
+  \begin{enumerate}
+    \item 针对问题XXX。
+  \end{enumerate}
+\end{frame}
+
+\section{参考文献}
+
+\begin{frame}
+	  \frametitle{Reference}
+%	\bibliography{ref}
+%	\bibliographystyle{alpha}
+	% 如果参考文献太多的话，可以像下面这样调整字体：
+	% \tiny\bibliographystyle{alpha}
+	
+	%%%% 注意需要自己去弄lib
+\end{frame}
+
+\begin{frame}[plain]
+  
+    \LARGE{
+   谢谢！}
+  
+\end{frame}
+
+\end{document}
