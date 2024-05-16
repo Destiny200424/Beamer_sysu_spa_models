@@ -6,7 +6,13 @@
 
 更换logo为物天学院；做了简化；
 
+## Brief View
 
+<img src="screenshot/屏幕截图 2024-05-13 195535.png" alt="屏幕截图 2024-05-13 195535" style="zoom:50%;" />
+
+<img src="screenshot/屏幕截图 2024-05-13 232623.png" alt="屏幕截图 2024-05-13 232623" style="zoom:50%;" />
+
+<img src="screenshot/屏幕截图 2024-05-13 232209.png" alt="屏幕截图 2024-05-13 232209" style="zoom: 50%;" />
 
 ## Versions
 
@@ -18,8 +24,6 @@
 
 ## Copyright
 
-%----------------------------------------------------
-% SYSU.SPA Beamer Model by DSY May 2024;
-% My personal site:  https://destiny200424.github.io/
-% or Email me at - dongsy6@mail2.sysu.edu.cn
-%----------------------------------------------------
+SYSU.SPA Beamer Model by DSY May 2024;
+My personal site:  https://destiny200424.github.io/
+ or Email me at - dongsy6@mail2.sysu.edu.cn
